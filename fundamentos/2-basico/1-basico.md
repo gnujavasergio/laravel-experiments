@@ -65,7 +65,8 @@ php artisan make:controller SaludarController -r
 php artisan make:controller Web/SaludarController -r
 ```
 
+### Crear Request: La mejor forma para hacer validaciones
+- https://laravel.com/docs/8.x/validation#rule-required
 ```bash
-php artisan route:list
-php artisan route:clear
+php artisan make:request UserRequest
 ```

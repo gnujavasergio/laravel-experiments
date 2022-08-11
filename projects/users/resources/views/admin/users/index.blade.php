@@ -37,6 +37,10 @@
                             <input type="password" placeholder="contraseña" id="password" name="password" class="form-control">
                         </div>
                         <div class="mb-3">
+                            <label for="age">Edad</label>
+                            <input type="text" placeholder="Edad" id="age" name="age" class="form-control" value="{{ old('age') }}">
+                        </div>
+                        <div class="mb-3">
                             @csrf
                             <input type="submit" class="btn btn-primary btn-sm" value="Guardar">
                         </div>

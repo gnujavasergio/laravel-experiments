@@ -1,4 +1,9 @@
 ## Routes
+- Para listar ruta 
+```bash
+php artisan route:list
+php artisan route:clear
+```
 
 - Para manejar vista estaticas con algunos parametros
 ```injectablephp
@@ -9,11 +14,14 @@ Route::view('welcome', 'web.home.index', [
 ]);
 ```
 
-- Resource: gestionar 7 rutas
+- Resource: gestiona 7 rutas
 ```bash
 php artisan make:controller CategoryController --resource
+
+php artisan make:controller CategoryController --resource --model=Category
 ```
 ```injectablephp
+// routers.php
 Route::resource('categories', CategoryController::class);
 ```
 ```bash

@@ -5,7 +5,26 @@
 - https://github.com/laravel/ui
 
 ```bash
-composer require laravel/ui
+# Laravel 8.x, 9.x
+composer require laravel/ui --dev
+# Laravel 7.x
+composer require laravel/ui:^2.0 --dev
+# laravel 5.8 y 6.x
+composer require laravel/ui:^1.0 --dev
+
+
+# Esqueleteo basico de login y registro
+php artisan ui:auth
+
+# Generate basic scaffolding
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui react
+
+# Generate login / registration scaffolding...
+php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
 ```
 
 ### Laravel jetstream
